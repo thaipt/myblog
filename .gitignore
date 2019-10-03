@@ -1,3 +1,4 @@
 *.pyo
 *.pyc
 __pycache__
+logs/
