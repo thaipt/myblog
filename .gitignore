@@ -1,5 +1,7 @@
 *.pyo
 *.pyc
+*.pot
+*.mo
 __pycache__
 logs/
 app.db
