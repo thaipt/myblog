@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-18 15:10-0600\n"
+"POT-Creation-Date: 2019-10-29 11:39-0600\n"
 "PO-Revision-Date: 2019-10-18 15:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: vi\n"
@@ -38,7 +38,7 @@ msgstr "Mật mã"
 msgid "Remember Me"
 msgstr "Ghi nhớ thông tin tài khoản"
 
-#: app/forms.py:11 app/routes.py:55 app/templates/login.html:5
+#: app/forms.py:11 app/routes.py:60 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Đăng nhập"
 
@@ -50,7 +50,7 @@ msgstr "Địa chỉ email"
 msgid "Repeat Password"
 msgstr "Nhập lại mật mã"
 
-#: app/forms.py:19 app/routes.py:74
+#: app/forms.py:19 app/routes.py:79
 msgid "Register"
 msgstr "Đăng ký"
 
@@ -78,68 +78,76 @@ msgstr "Nói"
 msgid "Request Password Reset"
 msgstr "Yêu cầu phục hồi mật mã"
 
-#: app/routes.py:27
+#: app/routes.py:32
 msgid "Your post is now live!"
 msgstr "Bài của bạn đã được đăng!"
 
-#: app/routes.py:36 app/templates/base.html:21
+#: app/routes.py:41 app/templates/base.html:21
 msgid "Home"
 msgstr "Trang chủ"
 
-#: app/routes.py:48
+#: app/routes.py:53
 msgid "Invalid username or password"
 msgstr "Tên tài khoản hoặc mật mã không hợp lệ"
 
-#: app/routes.py:72
+#: app/routes.py:77
 msgid "Congratulations, you are now a registered user!"
 msgstr "Xin chúng mừng, bạn đã đăng ký thành công!"
 
-#: app/routes.py:98
+#: app/routes.py:103
 msgid "Your changes have been saved."
 msgstr "Thông tin đã được cập nhật."
 
-#: app/routes.py:103 app/templates/edit_profile.html:5
+#: app/routes.py:108 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Soạn thảo hồ sơ cá nhân"
 
-#: app/routes.py:111 app/routes.py:126
+#: app/routes.py:116 app/routes.py:131
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Không tìm thấy thành viên %(username)s."
 
-#: app/routes.py:114
+#: app/routes.py:119
 msgid "You cannot follow yourself!"
 msgstr "Bạn không thể theo dõi chính mình!"
 
-#: app/routes.py:118
+#: app/routes.py:123
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Bạn đang theo dõi %(username)s!"
 
-#: app/routes.py:129
+#: app/routes.py:134
 msgid "You cannot unfollow yourself!"
 msgstr "Bạn không thể ngừng theo dõi chính mình!"
 
-#: app/routes.py:133
+#: app/routes.py:138
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Bạn không còn theo dõi %(username)s."
 
-#: app/routes.py:146 app/templates/base.html:22
+#: app/routes.py:151 app/templates/base.html:22
 msgid "Explore"
 msgstr "Khám phá"
 
-#: app/routes.py:158
+#: app/routes.py:163
 msgid "Check your email for the instructions to reset your password"
 msgstr "Kiểm tra email của bạn và làm theo các hướng dẫn trong đó để phục hồi mật mã"
 
-#: app/routes.py:161 app/templates/reset_password_request.html:5
+#: app/routes.py:166 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Phục hồi mật mã"
 
-#: app/routes.py:174
+#: app/routes.py:179
 msgid "Your password has been reset."
 msgstr "Mật mã của bạn đã được phục hồi"
+
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr "Lỗi: Cấu hình cho dịch vụ phiên dịch chưa được thiết lập"
+
+#: app/translate.py:27
+msgid "Error: the translation service failed."
+msgstr "Lỗi: Có lỗi trong quá trình phiên dịch"
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -155,12 +163,18 @@ msgstr "Chương trình có lỗi"
 
 #: app/templates/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "Sự cố đã được thông báo cho quản trị viên. Xin lỗi vì đã gây khó khăn cho bạn."
+msgstr ""
+"Sự cố đã được thông báo cho quản trị viên. Xin lỗi vì đã gây khó khăn cho"
+" bạn."
 
 #: app/templates/_post.html:14
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s đăng lúc %(when)s"
+
+#: app/templates/_post.html:25
+msgid "Translate"
+msgstr ""
 
 #: app/templates/base.html:4
 msgid "Welcome to Myblog"
@@ -177,6 +191,10 @@ msgstr "Hồ sơ cá nhân"
 #: app/templates/base.html:30
 msgid "Logout"
 msgstr "Đăng xuất"
+
+#: app/templates/base.html:67
+msgid "Error: Could not contact server."
+msgstr ""
 
 #: app/templates/index.html:5
 #, python-format
