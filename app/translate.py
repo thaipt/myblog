@@ -9,7 +9,7 @@ def translate(text, source_language, dest_language):
 
     base_url = 'https://api.cognitive.microsofttranslator.com'
     path = '/translate?api-version=3.0'
-    params = '&from' + source_language + '&to=' + dest_language
+    params = '&from=' + source_language + '&to=' + dest_language
     constructed_url = base_url + path + params
 
     headers = {
