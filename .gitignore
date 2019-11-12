@@ -1,4 +1,7 @@
 *.pyo
 *.pyc
+*.mo
 __pycache__
 logs/
+app.db
+.env
