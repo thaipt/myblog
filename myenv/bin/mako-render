@@ -1,4 +1,4 @@
-#!/home/thaipt/Works/Python/myblog/myenv/bin/python3
+#!/home/thaipt/Works/Flask/myblog/myenv/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.1.0','console_scripts','mako-render'
 __requires__ = 'Mako==1.1.0'
 import re

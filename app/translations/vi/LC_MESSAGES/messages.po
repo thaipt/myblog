@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-12 15:21-0700\n"
+"POT-Creation-Date: 2019-11-19 23:03-0700\n"
 "PO-Revision-Date: 2019-10-18 15:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: vi\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "Xin đăng nhập để truy cập trang này."
 
@@ -84,7 +84,9 @@ msgstr "Xin chúng mừng, bạn đã đăng ký thành công!"
 
 #: app/auth/routes.py:62
 msgid "Check your email for the instructions to reset your password"
-msgstr "Kiểm tra email của bạn và làm theo các hướng dẫn trong đó để phục hồi mật mã"
+msgstr ""
+"Kiểm tra email của bạn và làm theo các hướng dẫn trong đó để phục hồi mật"
+" mã"
 
 #: app/auth/routes.py:65 app/templates/auth/reset_password_request.html:5
 msgid "Reset Password"
@@ -106,45 +108,49 @@ msgstr "Gởi dữ liệu"
 msgid "Say something"
 msgstr "Nói"
 
-#: app/main/routes.py:34
+#: app/main/forms.py:31 app/main/routes.py:148
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: app/main/routes.py:35
 msgid "Your post is now live!"
 msgstr "Bài của bạn đã được đăng!"
 
-#: app/main/routes.py:43 app/templates/base.html:21
+#: app/main/routes.py:44 app/templates/base.html:21
 msgid "Home"
 msgstr "Trang chủ"
 
-#: app/main/routes.py:58 app/templates/base.html:22
+#: app/main/routes.py:59 app/templates/base.html:22
 msgid "Explore"
 msgstr "Khám phá"
 
-#: app/main/routes.py:86
+#: app/main/routes.py:87
 msgid "Your changes have been saved."
 msgstr "Thông tin đã được cập nhật."
 
-#: app/main/routes.py:91 app/templates/edit_profile.html:5
+#: app/main/routes.py:92 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Soạn thảo hồ sơ cá nhân"
 
-#: app/main/routes.py:100 app/main/routes.py:116
+#: app/main/routes.py:101 app/main/routes.py:117
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Không tìm thấy thành viên %(username)s."
 
-#: app/main/routes.py:103
+#: app/main/routes.py:104
 msgid "You cannot follow yourself!"
 msgstr "Bạn không thể theo dõi chính mình!"
 
-#: app/main/routes.py:107
+#: app/main/routes.py:108
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Bạn đang theo dõi %(username)s!"
 
-#: app/main/routes.py:119
+#: app/main/routes.py:120
 msgid "You cannot unfollow yourself!"
 msgstr "Bạn không thể ngừng theo dõi chính mình!"
 
-#: app/main/routes.py:123
+#: app/main/routes.py:124
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Bạn không còn theo dõi %(username)s."
@@ -162,19 +168,19 @@ msgstr "Phiên dịch"
 msgid "Welcome to Myblog"
 msgstr "Chào mừng bạn đến với Myblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:33
 msgid "Login"
 msgstr "Đăng nhập"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:35
 msgid "Profile"
 msgstr "Hồ sơ cá nhân"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:36
 msgid "Logout"
 msgstr "Đăng xuất"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:73
 msgid "Error: Could not contact server."
 msgstr "Lỗi: Không tìm được máy chủ"
 
@@ -190,6 +196,18 @@ msgstr "Bài mới"
 #: app/templates/index.html:22 app/templates/user.html:36
 msgid "Older posts"
 msgstr "Bài cũ"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Kết quả tìm kiếm"
+
+#: app/templates/search.html:12
+msgid "Previous results"
+msgstr "Kết quả trước"
+
+#: app/templates/search.html:17
+msgid "Next results"
+msgstr "Kết quả tiếp theo"
 
 #: app/templates/user.html:8
 msgid "User"
