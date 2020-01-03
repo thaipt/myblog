@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-19 23:03-0700\n"
+"POT-Creation-Date: 2020-01-03 15:59-0700\n"
 "PO-Revision-Date: 2019-10-18 15:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: vi\n"
@@ -100,7 +100,7 @@ msgstr "Mật mã của bạn đã được phục hồi"
 msgid "About me"
 msgstr "Về tôi"
 
-#: app/main/forms.py:13 app/main/forms.py:28
+#: app/main/forms.py:13 app/main/forms.py:28 app/main/forms.py:44
 msgid "Submit"
 msgstr "Gởi dữ liệu"
 
@@ -108,9 +108,13 @@ msgstr "Gởi dữ liệu"
 msgid "Say something"
 msgstr "Nói"
 
-#: app/main/forms.py:31 app/main/routes.py:148
+#: app/main/forms.py:31 app/main/routes.py:155
 msgid "Search"
 msgstr "Tìm kiếm"
+
+#: app/main/forms.py:42
+msgid "Message"
+msgstr "Tin nhắn"
 
 #: app/main/routes.py:35
 msgid "Your post is now live!"
@@ -124,43 +128,51 @@ msgstr "Trang chủ"
 msgid "Explore"
 msgstr "Khám phá"
 
-#: app/main/routes.py:87
+#: app/main/routes.py:94
 msgid "Your changes have been saved."
 msgstr "Thông tin đã được cập nhật."
 
-#: app/main/routes.py:92 app/templates/edit_profile.html:5
+#: app/main/routes.py:99 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Soạn thảo hồ sơ cá nhân"
 
-#: app/main/routes.py:101 app/main/routes.py:117
+#: app/main/routes.py:108 app/main/routes.py:124
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Không tìm thấy thành viên %(username)s."
 
-#: app/main/routes.py:104
+#: app/main/routes.py:111
 msgid "You cannot follow yourself!"
 msgstr "Bạn không thể theo dõi chính mình!"
 
-#: app/main/routes.py:108
+#: app/main/routes.py:115
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Bạn đang theo dõi %(username)s!"
 
-#: app/main/routes.py:120
+#: app/main/routes.py:127
 msgid "You cannot unfollow yourself!"
 msgstr "Bạn không thể ngừng theo dõi chính mình!"
 
-#: app/main/routes.py:124
+#: app/main/routes.py:131
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Bạn không còn theo dõi %(username)s."
 
-#: app/templates/_post.html:14
+#: app/main/routes.py:170
+msgid "Your message has been sent."
+msgstr "Tin nhắn đã được gởi thành công."
+
+#: app/main/routes.py:172
+msgid "Send Message"
+msgstr "Gởi tin nhắn"
+
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s:"
 msgstr "%(username)s đã nói %(when)s:"
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "Phiên dịch"
 
@@ -172,15 +184,19 @@ msgstr "Chào mừng bạn đến với Myblog"
 msgid "Login"
 msgstr "Đăng nhập"
 
-#: app/templates/base.html:35
+#: app/templates/base.html:36 app/templates/messages.html:4
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#: app/templates/base.html:45
 msgid "Profile"
 msgstr "Hồ sơ cá nhân"
 
-#: app/templates/base.html:36
+#: app/templates/base.html:46
 msgid "Logout"
-msgstr "Đăng xuất"
+msgstr "Thoát"
 
-#: app/templates/base.html:73
+#: app/templates/base.html:83
 msgid "Error: Could not contact server."
 msgstr "Lỗi: Không tìm được máy chủ"
 
@@ -189,13 +205,21 @@ msgstr "Lỗi: Không tìm được máy chủ"
 msgid "Hi, %(username)s!"
 msgstr "Xin chào, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:31
+#: app/templates/index.html:17 app/templates/user.html:34
 msgid "Newer posts"
 msgstr "Bài mới"
 
-#: app/templates/index.html:22 app/templates/user.html:36
+#: app/templates/index.html:22 app/templates/user.html:39
 msgid "Older posts"
 msgstr "Bài cũ"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "Tin nhắn mới"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "Tin nhắn cũ"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -209,20 +233,25 @@ msgstr "Kết quả trước"
 msgid "Next results"
 msgstr "Kết quả tiếp theo"
 
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "Gởi tin nhắn cho %(recipient)s"
+
 #: app/templates/user.html:8
 msgid "User"
 msgstr "Thành viên"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:9
 msgid "Last seen on"
 msgstr "Lần xuất hiện cuối cùng"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d người theo dõi"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d following"
 msgstr "Đang theo dõi %(count)d"
@@ -231,13 +260,17 @@ msgstr "Đang theo dõi %(count)d"
 msgid "Edit your profile"
 msgstr "Soạn thảo hồ sơ cá nhân"
 
-#: app/templates/user.html:17
+#: app/templates/user.html:17 app/templates/user_popup.html:14
 msgid "Follow"
 msgstr "Theo dõi"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:19 app/templates/user_popup.html:16
 msgid "Unfollow"
 msgstr "Ngừng theo dõi"
+
+#: app/templates/user.html:22
+msgid "Send private message"
+msgstr ""
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
