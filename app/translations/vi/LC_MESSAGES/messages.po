@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-03 15:59-0700\n"
+"POT-Creation-Date: 2020-02-07 15:32-0700\n"
 "PO-Revision-Date: 2019-10-18 15:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: vi\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: app/__init__.py:19
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Xin đăng nhập để truy cập trang này."
 
@@ -167,6 +167,14 @@ msgstr "Tin nhắn đã được gởi thành công."
 msgid "Send Message"
 msgstr "Gởi tin nhắn"
 
+#: app/main/routes.py:211
+msgid "An export task is currently in progress"
+msgstr "Tác vụ xuất bài viết ra file đang được thực thi"
+
+#: app/main/routes.py:213
+msgid "Exporting posts..."
+msgstr "Đang xuất bài viết"
+
 #: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s:"
@@ -196,7 +204,7 @@ msgstr "Hồ sơ cá nhân"
 msgid "Logout"
 msgstr "Thoát"
 
-#: app/templates/base.html:83
+#: app/templates/base.html:95
 msgid "Error: Could not contact server."
 msgstr "Lỗi: Không tìm được máy chủ"
 
@@ -205,11 +213,11 @@ msgstr "Lỗi: Không tìm được máy chủ"
 msgid "Hi, %(username)s!"
 msgstr "Xin chào, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:34
+#: app/templates/index.html:17 app/templates/user.html:37
 msgid "Newer posts"
 msgstr "Bài mới"
 
-#: app/templates/index.html:22 app/templates/user.html:39
+#: app/templates/index.html:22 app/templates/user.html:42
 msgid "Older posts"
 msgstr "Bài cũ"
 
@@ -260,17 +268,21 @@ msgstr "Đang theo dõi %(count)d"
 msgid "Edit your profile"
 msgstr "Soạn thảo hồ sơ cá nhân"
 
-#: app/templates/user.html:17 app/templates/user_popup.html:14
+#: app/templates/user.html:17
+msgid "Export your posts"
+msgstr "Xuất các bài viết ra file"
+
+#: app/templates/user.html:20 app/templates/user_popup.html:14
 msgid "Follow"
 msgstr "Theo dõi"
 
-#: app/templates/user.html:19 app/templates/user_popup.html:16
+#: app/templates/user.html:22 app/templates/user_popup.html:16
 msgid "Unfollow"
 msgstr "Ngừng theo dõi"
 
-#: app/templates/user.html:22
+#: app/templates/user.html:25
 msgid "Send private message"
-msgstr ""
+msgstr "Gởi tin nhắn cá nhân"
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
